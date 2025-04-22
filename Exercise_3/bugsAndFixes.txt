@@ -1,0 +1,36 @@
+1. calculate_average_hours
+
+    Bug: Used an undefined variable in len(), and returned the wrong name.
+
+    Fix: Switched to len(volunteer_list) and return the correctly named avg.
+
+
+
+2. filter_by_city
+
+    Bug: Compared without lower‑casing both sides and tried to call add() on a list.
+
+    Fix: normalize with row["City"].lower() == city.lower() and use result.append(row).
+
+
+
+3. load_data
+
+    Bug: Tried to open an undefined file variable instead of using the function argument.
+
+    Fix: Open file_path (the passed‑in parameter) and read from that.
+
+
+
+4. __main__ block
+
+    Bug: Called load_data() with a wrong variable name.
+
+    Fix: Ensure the argument matches the defined file_path variable.
+
+
+
+
+
+
+
